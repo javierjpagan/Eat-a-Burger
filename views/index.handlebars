@@ -1,0 +1,88 @@
+{{!-- <div class="container">
+
+    <div class="row justify-content-center">
+        <div class="col col-sm-5">
+          <div class="container"> --}}
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+
+            <h2>Burgers on the menu:</h2>
+
+            <ol>
+              {{#each burgers}}
+                {{#unless devoured}}
+                  {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+              {{/each}}
+            </ol>
+
+
+    </div>
+    <div class="col-sm" id="inputBox">
+
+
+            {{!-- <h1>Burgers</h1> --}}
+
+            <h2>Add a Burger</h2>
+            <form class="create-form">
+
+              <div class="form-group">
+                <label for="ca">Burger Name:</label><br>
+                <input type="text" id="bu" name="name">
+              </div>
+
+              {{!-- <div class="form-group">
+                <label for="dev">Devoured?</label><br>
+                <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+                <input type="radio" name="devoured" value="0"> Not Devoured
+              </div> --}}
+
+              <button type="submit">Add Burger</button>
+            </form>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="col-sm">
+
+
+
+            <h2>Burgers already devoured:</h2>
+
+            <ol>
+              {{#each burgers}}
+                {{#if devoured}}
+                  {{> burgers/burger-block2}}
+                {{/if}}
+              {{/each}}
+            </ol>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+{{!-- 
+        </div>
+      </div>
+    </div>
+</div> --}}

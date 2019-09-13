@@ -1,0 +1,41 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.jumbotron {
+  background: #f39c12;
+}
+
+body { 
+    background-image: url('../images/hamburgerbg.jpg');
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.display-3 {
+  font-family: 'Indie Flower', cursive;
+}
+
+.row {
+  background: #f39c12;
+}
+
+
